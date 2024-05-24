@@ -194,20 +194,6 @@ function App() {
           Add manually
         </Link>
       </div>
-      {/* Description Section */}
-      {/* {description && (
-        <div>
-          <h2 className="text-lg font-bold mb-2">Description:</h2>
-          <pre className="text-sm">{formatDescription(jsonData)}</pre>
-        </div>
-      )} */}
-      {/* JSON Data Section */}
-      {/* {jsonData && (
-        <div>
-          <h2 className="text-lg font-bold mb-2">JSON Data:</h2>
-          <pre className="text-sm">{formatDescription(jsonData)}</pre>
-        </div>
-      )} */}
     </div>
   );
 }

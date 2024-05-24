@@ -33,10 +33,10 @@ export default function Home() {
 
   async function fetchData() {
     try {
-      const supabase = createClient(); // Initialize Supabase client
+      const supabase = createClient();
       const { data: records, error } = await supabase
         .from("recipe")
-        .select("*"); // Replace 'your_table_name' with your actual table name
+        .select("*");
       if (error) {
         throw error;
       }
@@ -61,9 +61,6 @@ export default function Home() {
                   <CardHeader>
                     <CardTitle className="text-xl text-start">{name}</CardTitle>
                   </CardHeader>
-                  {/* <CardContent>
-                    <p>Card Content</p>
-                  </CardContent> */}
                   <CardFooter>
                     <p>{item.calories} Calories</p>
                   </CardFooter>
